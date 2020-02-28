@@ -10,4 +10,5 @@ sudo: enabled
 script:
         - npm run lint-check
         - npm test
+        - npm run build && npm run test:karma
         - nvm install 10.15 && nvm exec 10.15 npm run spellcheck
